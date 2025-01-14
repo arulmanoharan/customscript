@@ -14,6 +14,10 @@ jobs:
       actions: read
       contents: read
 
+    strategy:
+      matrix:
+        language: [javascript, python, java] # Add or modify languages as needed
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
